@@ -55,3 +55,37 @@ a {
   display: grid;
   gap: 1rem;
 }
+.full-article__comments {
+  display: grid;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.075);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.full-article__comments-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding-bottom: 0.5rem;
+}
+.full-article__comment {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding-bottom: 0.5rem;
+}
+.comment-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
+.comment-input {
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.525);
+}
+.submit-comment {
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.525);
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

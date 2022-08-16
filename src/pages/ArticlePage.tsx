@@ -30,10 +30,10 @@ export function ArticlePage() {
         <div className="full-article__comments">
           <h3 className="full-article__comments-title">Comments</h3>
           {article.comments.map((comment) => (
-            <p>{comment.content}</p>
+            <p className="full-article__comment">{comment.content}</p>
           ))}
 
-          <form>
+          <form className="comment-form">
             <input className="comment-input" type="text" placeholder="Write your comment" />
             <button className="submit-comment" type="submit">Send</button>
           </form>
