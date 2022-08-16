@@ -40,14 +40,18 @@ a {
 }
 .full-article-container {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   /* width: 500px; */
   grid-template-rows: auto auto auto 1fr;
   place-content: center;
-  padding: 3rem;
+  padding: 4rem;
   /* place-content: center; */
   /* align-content: center; */
 }
 .full-article__image {
   width: 100%;
+}
+.full-article__info {
+  display: grid;
+  gap: 1rem;
 }

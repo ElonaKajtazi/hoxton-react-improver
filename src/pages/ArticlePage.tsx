@@ -22,9 +22,22 @@ export function ArticlePage() {
           src={article.image}
           alt={article.title}
         />
-        <h2 className="full-article__title">{article.title}</h2>
-        <p className="full-article__author-date">{`By: ${article.author} on ${article.date}`}</p>
-        <p className="full-article__author-date">{article.description}</p>
+        <div className="full-article__info">
+          <h2 className="full-article__title">{article.title}</h2>
+          <p className="full-article__author-date">{`By: ${article.author} on ${article.date}`}</p>
+          <p className="full-article__author-date">{article.description}</p>
+        </div>
+        <div className="full-article__comments">
+          <h3 className="full-article__comments-title">Comments</h3>
+          {article.comments.map((comment) => (
+            <p>{comment.content}</p>
+          ))}
+
+          <form>
+            <input className="comment-input" type="text" placeholder="Write your comment" />
+            <button className="submit-comment" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -9,6 +9,11 @@ import { Main } from "./pages/Main";
 //Each article: image, title, description
 //Article page: more info, you kan like or comment the artice, delete the comment.
 // if i have te mybe do smthing  with user and adding my own articles...
+export type CommentType = {
+  id: number;
+  content: string;
+  articleId: number;
+};
 export type ArticleType = {
   id: number;
   title: string;
@@ -16,6 +21,7 @@ export type ArticleType = {
   image: string;
   author: string;
   date: string;
+  comments: CommentType[];
 };
 export type ArticlesType = ArticleType[];
 function App() {
