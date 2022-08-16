@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import { Header } from "./components/Header";
+import { Main } from "./components/Main";
 //I am going to buld a page for food safety news
 //Main page: header, the articles mabye, footer
 //Each article: image, title, description
@@ -14,24 +16,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <header className="header">
-        <h1>Food Safety News</h1>
-      </header>
-      <main className="main">
-        <ul className="article-list">
-          {articles.map((article) => (
-            <li>
-              <article className="article">
-                <img className="article-image" src={article.image} />
-                <div className="article-info">
-                  <h2>{article.title}</h2>
-                  <p>{article.description}</p>
-                </div>
-              </article>
-            </li>
-          ))}
-        </ul>
-      </main>
+      <Header />
+      <Main articles={articles} />
     </div>
   );
 }
