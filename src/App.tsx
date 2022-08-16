@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Header } from "./components/Header";
-import { Main } from "./components/Main";
+import { ArticlePage } from "./pages/ArticlePage";
+import { Main } from "./pages/Main";
 //I am going to buld a page for food safety news
 //Main page: header, the articles mabye, footer
 //Each article: image, title, description
@@ -17,7 +19,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main articles={articles} />
+      <Routes>
+        <Route index element={<Navigate to="home" />} />
+        <Route path="home" element={<Main articles={articles} />} />
+        <Route path="article" element={<ArticlePage />} />
+      </Routes>
     </div>
   );
 }
