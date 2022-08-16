@@ -31,3 +31,23 @@
   padding: 1rem;
   gap: 0.5rem;
 }
+a {
+  all: unset;
+}
+.full-article {
+  display: grid;
+  gap: 1rem;
+}
+.full-article-container {
+  display: grid;
+  gap: 1rem;
+  /* width: 500px; */
+  grid-template-rows: auto auto auto 1fr;
+  place-content: center;
+  padding: 3rem;
+  /* place-content: center; */
+  /* align-content: center; */
+}
+.full-article__image {
+  width: 100%;
+}

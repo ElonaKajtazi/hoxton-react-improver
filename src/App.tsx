@@ -9,8 +9,17 @@ import { Main } from "./pages/Main";
 //Each article: image, title, description
 //Article page: more info, you kan like or comment the artice, delete the comment.
 // if i have te mybe do smthing  with user and adding my own articles...
+export type ArticleType = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  author: string;
+  date: string;
+};
+export type ArticlesType = ArticleType[];
 function App() {
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState<ArticlesType>([]);
   useEffect(() => {
     fetch("http://localhost:4000/articles")
       .then((rsp) => rsp.json())
@@ -22,7 +31,7 @@ function App() {
       <Routes>
         <Route index element={<Navigate to="home" />} />
         <Route path="home" element={<Main articles={articles} />} />
-        <Route path="article" element={<ArticlePage />} />
+        <Route path="articlePage/:id" element={<ArticlePage />} />
       </Routes>
     </div>
   );

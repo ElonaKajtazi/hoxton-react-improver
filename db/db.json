@@ -4,7 +4,7 @@
       "id": 1,
       "image": "https://www.foodsafetynews.com/files/2019/02/water_1000x565-825x466.jpg",
       "title": "FDA’s new proposed food-safety ag water rule no slam dunk",
-      "description": "“Like getting the rug pulled out from under us.” That’s how somefarmers react when hearing about the FDA’s sudden and unexpected change in food safety requirements…",
+      "description": "“Like getting the rug pulled out from under us.” That’s how somefarmers react when hearing about the FDA’s sudden and unexpected change in food safety requirements for the use of agricultural water before harvesting a crop.The original compliance date was January 2022, but the Food and Drug Administration has delayed it.",
       "author": "Cookson Beecher",
       "date": "August 15, 2022"
     },
@@ -31,6 +31,23 @@
       "description": "Woodbridge, IL-based Home Run Inn Frozen Foods is recalling approximately 13,099 pounds of frozen meat pizza product that may be contaminated with extraneous materials, specifically metal, USDA’s Food Safety and Inspection Service (FSIS) reported Sunday…",
       "author": "Dan Flynn",
       "date": "August 15, 2022"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "This is a comment",
+      "articleId": 3
+    },
+    {
+      "id": 1,
+      "content": "This is an other comment",
+      "articleId": 2
+    },
+    {
+      "id": 1,
+      "content": "This is yet an other comment",
+      "articleId": 1
     }
   ]
 }

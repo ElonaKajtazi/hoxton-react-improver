@@ -1,0 +1,4 @@
+{
+    "/articles": "/articles?_embed=comments",
+    "/articles/*": "/articles/$1?_embed=comments"
+}
